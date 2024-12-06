@@ -8,7 +8,7 @@ export class AppComponent {
   value = 'World';
   message = 'default';
   constructor(private http: HttpClient) {
-    this.http.get('/api/message')
+    this.http.get('/api/displayhttpmessageText')
       .subscribe((resp: any) => this.message = resp.text);
   }
 }
